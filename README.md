@@ -1,7 +1,8 @@
 # Unity Code
-#### Use this code to listen to data from serial (arduino). 
+
 #### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
 
+#### Use this code to listen to data from serial (arduino). 
 ```Javascript
 using System.Collections;
 using System.Collections.Generic;
