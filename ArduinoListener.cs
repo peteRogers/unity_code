@@ -29,7 +29,7 @@ public class ArduinoListener : MonoBehaviour
         //     cameraModifier.transform.eulerAngles.z
         //     );
         Vector3 newPosition = cubeModifier.transform.position; // We store the current position
-        newPosition.y = float.Parse(msg)/100.0f;
+        newPosition.y = float.Parse(msg)/10.0f;
         cubeModifier.transform.position = newPosition;
 
     }
