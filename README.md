@@ -2,6 +2,9 @@
 
 #### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
 
+#### [HDRI Sky Box files](https://hdri-haven.com/)
+
+
 #### Arduino code for the rotaryEncoder. 
 ```Javascript
 
