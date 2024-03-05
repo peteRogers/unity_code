@@ -88,3 +88,65 @@ public class ArduinoListener : MonoBehaviour
 }
 
 ```
+### Make a following path
+```Javascript
+using UnityEngine;
+
+public class RandomPathWalker : MonoBehaviour
+{
+    public GameObject[] waypoints; // Array to hold the waypoints
+    public float speed = 5f; // Movement speed
+    public float turnSpeed = 10f; // Turning speed to face the next waypoint
+
+    private Vector3 targetWaypoint; // Current target waypoint position
+    private int targetWaypointIndex = -1; // Index of the current target waypoint
+    private float minDistance = 0.1f; // Minimum distance to reach the waypoint
+
+    void Start()
+    {
+        SetNextWaypoint();
+    }
+
+    void Update()
+    {
+        MoveTowardsWaypoint();
+        RotateTowardsWaypoint();
+    }
+
+    void SetNextWaypoint()
+    {
+        // Avoid repeating the last waypoint
+        int newIndex;
+        do
+        {
+            newIndex = Random.Range(0, waypoints.Length);
+        } while (newIndex == targetWaypointIndex);
+
+        targetWaypointIndex = newIndex;
+        targetWaypoint = waypoints[targetWaypointIndex].transform.position;
+    }
+
+    void MoveTowardsWaypoint()
+    {
+        // Move towards the target waypoint
+        float step = speed * Time.deltaTime; // Calculate the step size
+        transform.position = Vector3.MoveTowards(transform.position, targetWaypoint, step);
+
+        // Check if the waypoint has been reached
+        if (Vector3.Distance(transform.position, targetWaypoint) < minDistance)
+        {
+            SetNextWaypoint();
+        }
+    }
+
+    void RotateTowardsWaypoint()
+    {
+        // Determine the direction to the waypoint
+        Vector3 direction = (targetWaypoint - transform.position).normalized;
+        // Create a rotation towards the direction
+        Quaternion lookRotation = Quaternion.LookRotation(direction);
+        // Smoothly rotate towards the waypoint
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * turnSpeed);
+    }
+}
+```
