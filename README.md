@@ -3,11 +3,11 @@
 
 #### [Link to Shared resources, videos etc](https://www.icloud.com/freeform/0dcJW4AkDT0uDyV_DSHVgAQbg#XR_-_UNITY)
 
-### [Video runthrough of how to setup Unity AR Template with Simulation](https://youtu.be/n1pywzAShMY)
+##### [Video runthrough of how to setup Unity AR Template with Simulation](https://youtu.be/n1pywzAShMY)
 
-### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
+##### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
 
-### [HDRI Sky Box files](https://hdri-haven.com/)
+##### [HDRI Sky Box files](https://hdri-haven.com/)
 
 
 
