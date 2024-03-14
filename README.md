@@ -3,9 +3,13 @@
 
 #### [Link to Shared resources, videos etc](https://www.icloud.com/freeform/0dcJW4AkDT0uDyV_DSHVgAQbg#XR_-_UNITY)
 
-#### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
+### [Video runthrough of how to setup Unity AR Template with Simulation](https://youtu.be/n1pywzAShMY)
 
-#### [HDRI Sky Box files](https://hdri-haven.com/)
+### [link for the 'ardity' plugin asset for Unity](https://ardity.dwilches.com/)
+
+### [HDRI Sky Box files](https://hdri-haven.com/)
+
+
 
 
 #### Arduino code for the rotaryEncoder. 
