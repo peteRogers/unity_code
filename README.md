@@ -2,7 +2,7 @@
 
 ### These files support the introduction to Unity XR.
 
-#### [Link to Shared resources, videos etc](https://www.icloud.com/freeform/0dcJW4AkDT0uDyV_DSHVgAQbg#XR_-_UNITY)
+#### [PDF with supporting links and videos](./XR_UNITY.pdf)
 
 ##### [Video of creating Terrains and adding a simple player controller](https://www.youtube.com/watch?v=C2pj-zZQR68&ab_channel=PeterRogers)
 
